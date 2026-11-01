@@ -43,7 +43,7 @@ jobs:
 
   docker-build:
     name: Build Docker Image (no push)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: test
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
 
